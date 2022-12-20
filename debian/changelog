@@ -1,0 +1,159 @@
+libautovivification-perl (0.18-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Mon, 14 Nov 2022 17:44:17 +0800
+
+libautovivification-perl (0.18-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version 0.18
+  * declare conformance with Policy 4.1.1 (no changes needed)
+
+ -- Damyan Ivanov <dmn@debian.org>  Sun, 05 Nov 2017 10:15:10 +0200
+
+libautovivification-perl (0.17-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * debian/upstream/metadata: change GitHub/CPAN URL(s) to HTTPS.
+  * Remove Jonathan Yu from Uploaders. Thanks for your work!
+
+  [ cstamas ]
+  * Import upstream version 0.17
+  * add hardening options
+  * update d/copyright as a file got renamed
+  * bump standards-version to 4.0.1
+
+  [ gregor herrmann ]
+  * Update years of upstream copyright.
+
+ -- Tamas CSILLAG <cstamas@cstamas.hu>  Tue, 08 Aug 2017 23:00:20 +0200
+
+libautovivification-perl (0.16-1) unstable; urgency=medium
+
+  * Import upstream version 0.16
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 04 Jul 2015 18:12:10 +0200
+
+libautovivification-perl (0.15-1) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ Axel Beckert ]
+  * Imported new upstream release 0.13.
+  * Fix pkg-perl-specific lintian warning missing-testsuite-header
+  * Bump Standards-Version to 3.9.6 (no changes needed)
+
+  [ gregor herrmann ]
+  * Add debian/upstream/metadata.
+
+  * Import upstream version 0.15.
+    Fixes "FTBFS with perl 5.22"
+    (Closes: #787460)
+  * Update years of upstream and packaging copyright.
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 02 Jun 2015 22:27:47 +0200
+
+libautovivification-perl (0.12-1) unstable; urgency=low
+
+  * Imported Upstream version 0.12
+  * Remove lintian overrides now unused
+  * Remove libtest-* from build dependencies, not required now
+
+ -- Xavier Guimard <x.guimard@free.fr>  Sat, 14 Sep 2013 08:38:35 +0200
+
+libautovivification-perl (0.11-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/copyright: update years.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 17 Feb 2013 13:43:14 +0100
+
+libautovivification-perl (0.10-2) unstable; urgency=low
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ Xavier Guimard ]
+  * Bump debian/copyright format to 1.0
+  * Remove libtest-kwalitee-perl from dependencies since these tests are for
+    author
+  * Bump Standards-Version to 3.9.4
+  * Bump debhelper compatibility to 9 to get hardening flags
+  * Add lintian-overrides file to hide false-positive message on
+    hardening flags
+
+ -- Xavier Guimard <x.guimard@free.fr>  Wed, 06 Feb 2013 06:22:43 +0100
+
+libautovivification-perl (0.10-1) unstable; urgency=low
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Salvatore Bonaccorso ]
+  * debian/copyright: Replace DEP5 Format-Specification URL from
+    svn.debian.org to anonscm.debian.org URL.
+
+  [ gregor herrmann ]
+  * New upstream release.
+  * Set Standards-Version to 3.9.2 (no further changes).
+  * Bump debhelper compatibility level to 8.
+  * Add /me to Uploaders.
+  * debian/copyright: update information about t/lib/Test/Leaner.pm.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 28 Aug 2011 16:31:55 +0200
+
+libautovivification-perl (0.09-1) unstable; urgency=low
+
+  [ Jonathan Yu ]
+  * New upstream release
+
+  [ gregor herrmann ]
+  * debian/copyright: update years of upstream copyright.
+
+ -- Jonathan Yu <jawnsy@cpan.org>  Sat, 08 Jan 2011 17:28:47 -0500
+
+libautovivification-perl (0.07-1) unstable; urgency=low
+
+  * New upstream release
+  * Standards-Version 3.9.1 (no changes)
+  * No longer install README; it's from pod2text
+  * Use new 3.0 (quilt) source format
+  * Rewrite control description
+  * Drop perl version dependency (5.10 is available in lenny)
+  * Get years of copyright, add copyright info for ptable.h and
+    bundled Test::Leaner
+  * Add test modules: Test::Pod, Test::Pod::Coverage,
+    Test::Portability::Files, Test::Kwalitee
+  * Fix shebang in examples
+
+ -- Jonathan Yu <jawnsy@cpan.org>  Sat, 01 Jan 2011 17:58:13 -0500
+
+libautovivification-perl (0.06-1) unstable; urgency=low
+
+  * Take over for the Debian Perl Group
+  * debian/control: Added: Vcs-Svn field (source stanza); Vcs-Browser
+    field (source stanza). Changed: Maintainer set to Debian Perl Group
+    <pkg-perl-maintainers@lists.alioth.debian.org> (was: Ivan Kohler
+    <ivan-debian@420.am>); Ivan Kohler <ivan-debian@420.am> moved to
+    Uploaders.
+  * New upstream release
+
+ -- Ivan Kohler <ivan-debian@420.am>  Sat, 08 May 2010 17:34:12 -0700
+
+libautovivification-perl (0.05-1) unstable; urgency=low
+
+  * Initial Release (closes: Bug#575977).
+
+ -- Ivan Kohler <ivan-debian@420.am>  Tue, 30 Mar 2010 20:57:23 -0700
